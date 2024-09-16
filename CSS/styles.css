@@ -256,29 +256,53 @@ header {
     color: #168994;
 }
 
-@media (max-width: 768px) {
-    /* Responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+    /* Adjust the home section height for small screens */
     #home {
         height: auto;
+        padding: 20px;
     }
 
+    /* Stack content vertically and center it */
     .content {
         flex-direction: column;
+        gap: 2rem;
         text-align: center;
+        padding: 10px;
     }
 
-    .text {
-        margin-bottom: 20px;
+    /* Ensure text is legible on small screens */
+    .text h1 {
+        font-size: 1.8rem;
     }
 
+    .text .firstP, .text .secondP {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust the picture size for small screens */
     .picture {
+        height: 200px;
+        width: 200px;
+    }
+
+    .picture img {
+        width: 150px;
+    }
+
+    /* Adjust the CV button margin */
+    .cv-button {
+        margin-top: 20px;
         margin-bottom: 20px;
     }
 
-    .socials {
-        justify-content: left;
+    /* Social icons adjustment */
+    .socials a {
+        font-size: 30px;
+        margin: 0 5px;
     }
 }
+
 
 
 .fa-github {
